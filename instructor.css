@@ -1,0 +1,39 @@
+:root{
+    --font: bold 1em Calibri;
+    --negro:#000000;
+    --blanco: #FFFFFF;
+    --verde-corporativo: #39A900;
+    --azul-corporativo: #00324D;
+    --marron-corporativo: #CB7766;
+}
+
+
+header{
+    background-color: var(--verde-corporativo);
+    display: flex;
+    height:  5em;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    
+}
+.instructor{
+    width: fit-content;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .icon{
+        height: 100%;
+        flex-shrink: 0;
+        margin-right: .5em;
+    }
+
+    .nombre{
+        font: var(--font);
+        color: var(--blanco);
+    }
+}
