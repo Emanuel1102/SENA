@@ -30,7 +30,6 @@
 
             <img src="assets/flecha izquierda.png" alt="">
             
-
             <div class="calendar">
                 <ul class="list_days">
                     <li class="day-week">lun</li>
@@ -80,34 +79,38 @@
             <button id="btn-cerrar"> volver</button>
         </dialog>
         
-        <table class="table">
-            <caption class="table__tittle">grupo (nombre)</caption>
-
-            <thead class="table__thead">
-                <tr>
-                    <th>aprendiz</th>
-                    <th>asistencia</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>fulano</td>
-                    <td> <input type="checkbox" name="" id=""> </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>
-                        <span>presentes</span>
-                        <span>#</span>
+        <form action="">
+            <table class="table">
+                <caption class="table__tittle">grupo (nombre)</caption>
+    
+                <thead class="table__thead">
+                    <tr>
+                        <th>aprendiz</th>
+                        <th>asistencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fulano</td>
+                        <td> <input type="checkbox" name="" id=""> </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
                         <td>
-                            <button type="submit">guardar asistencia</button>
-                            
+                            <span>presentes</span>
+                            <span>#</span>
+                            <td>
+                                <button type="submit">guardar asistencia</button>
+                                
+                            </td>
                         </td>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </form>
+        
 
 
         <script src="instructor.js"></script>
