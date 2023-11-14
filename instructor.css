@@ -6,7 +6,7 @@
     --verde-corporativo: #39A900;
     --azul-corporativo: #00324D;
     --marron-corporativo: #CB7766;
-    --gris: rgb(189, 189, 189);
+    --gris: #E3E3E3;
     --border-1px-solid-black: 1px solid black;
 }
 
@@ -101,14 +101,17 @@ body{
 #ventana div:not(.calendar){
     background-color: var(--blanco);
     display: grid;
+    gap: 1em;
     place-items: center;
     --radius: 20px;
     border-radius: var(--radius);
     border: .2em solid var(--azul-corporativo);
-    padding: 0%;
+    
 
-    & h3{
+    & h2{
         background-color: var(--verde-corporativo);
+        color: var(--blanco);
+        --radius: 16px;
         border-radius: var(--radius) var(--radius) 0 0;
         display: grid;
         place-items: center;
@@ -117,18 +120,45 @@ body{
     }
     
     .calendar{
+        font-size: larger;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 2em;
-
+        
         .list_days{
+            border: 2px solid var(--azul-corporativo);
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            gap: .8em;
             list-style: none;
-            padding: 0%;
+            padding: 2em;
+            border-radius: 20px;
             background-color: var(--gris);
-            cursor: pointer;
+            
+            .day, .day-week{
+                color: var(--azul-corporativo);
+                text-align: center;
+                
+            }
+            
+            .day{
+                cursor: pointer;
+                padding: .5em;
+            }
+
+            .day:hover{
+                background-color: var(--verde-corporativo);
+                border-radius: 100%;
+                outline: 1px dashed var(--negro);
+                transition: .2s;
+            }
+
+            .day-week{
+                font-weight: bold;
+                margin-bottom: .5em;
+
+            }
         }
 
         .flecha{
@@ -136,9 +166,29 @@ body{
             height: var(--dimension-flecha);
             width: var(--dimension-flecha);
             cursor: pointer;
-
+            padding: 1em
+            
+            
+        }
+        .flecha:hover{
+            background-color: var(--gris);
+            border-radius: 100%;
+            transition: .2s;
+            
         }
     }
+
+    .container-btn-cerrar{
+        all: unset;
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        
+        #btn-cerrar{
+            margin-bottom: 1em;
+        }
+    }
+
 }
 
 .table{
