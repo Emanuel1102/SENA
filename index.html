@@ -23,103 +23,218 @@
 
     <body>
 
-        <div class="contenedor-btn-ventana">
-            <button id="btn-ventana" class="btn-ventana">Historial de asistencia</button>
-        </div>
+        <main class="principal">
 
-        <dialog id="ventana" > 
-            
-            <div>
-
-                <h2>(mes) de (año)</h2>
-
-                
-                <div class="calendar">
-                    <img class="flecha" src="assets/flecha izquierda.png" alt="flecha">
-                    <ul class="list_days">
-                        <li class="day-week">lun</li>
-                        <li class="day-week">mar</li>
-                        <li class="day-week">mie</li>
-                        <li class="day-week">jue</li>
-                        <li class="day-week">vie</li>
-                        <li class="day-week">sab</li>
-                        <li class="day-week">dom</li>
-
-                        <li class="day">1</li>
-                        <li class="day">2</li>
-                        <li class="day">3</li>
-                        <li class="day">4</li>
-                        <li class="day">5</li>
-                        <li class="day">6</li>
-                        <li class="day">7</li>
-                        <li class="day">8</li>
-                        <li class="day">9</li>
-                        <li class="day">10</li>
-                        <li class="day">11</li>
-                        <li class="day">12</li>
-                        <li class="day">13</li>
-                        <li class="day">14</li>
-                        <li class="day">15</li>
-                        <li class="day">16</li>
-                        <li class="day">17</li>
-                        <li class="day">18</li>
-                        <li class="day">19</li>
-                        <li class="day">20</li>
-                        <li class="day">21</li>
-                        <li class="day">22</li>
-                        <li class="day">23</li>
-                        <li class="day">24</li>
-                        <li class="day">25</li>
-                        <li class="day">26</li>
-                        <li class="day">27</li>
-                        <li class="day">28</li>
-                        <li class="day">29</li>
-                        <li class="day">30</li>
-                        <li class="day">31</li>
-                    </ul>
-                    <img class="flecha" src="assets/flecha derecha.png" alt="flecha">
-                </div>
-
-                <div class="container-btn-cerrar">
-                    <button id="btn-cerrar"> volver</button>
-                </div>
+            <div class="contenedor-btn-ventana">
+                <button id="btn-ventana" class="btn-ventana">Historial de asistencia</button>
             </div>
-
-        </dialog>
-        
-        <form action="">
-            <table class="table">
-                <caption class="table__tittle"> <b>Grupo (nombre)</b> </caption>
     
-                <thead class="table__thead">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Documento</th>
-                        <th>Asistencia</th>
-                    </tr>
-                </thead>
-                <tbody class="table__tbody">
-                    <tr>
-                        <td>Nombre</td>
-                        <td>Apellido</td>
-                        <td>xxxxxxxx</td>
-                        <td>
-                            <input class="checkbox" type="checkbox" name="" id=""> 
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot class="table__tfoot">
-                    <tr>
-                        <td colspan="4">
-                                <p>Presentes: #</p>
+            <dialog id="ventana" > 
+                
+                <div>
+    
+                    <h2>(mes) de (año)</h2>
+    
+                    
+                    <div class="calendar">
+                        <img class="flecha" src="assets/flecha izquierda.png" alt="flecha">
+                        <ul class="list_days">
+                            <li class="day-week">lun</li>
+                            <li class="day-week">mar</li>
+                            <li class="day-week">mie</li>
+                            <li class="day-week">jue</li>
+                            <li class="day-week">vie</li>
+                            <li class="day-week">sab</li>
+                            <li class="day-week">dom</li>
+    
+                            <li class="day">1</li>
+                            <li class="day">2</li>
+                            <li class="day">3</li>
+                            <li class="day">4</li>
+                            <li class="day">5</li>
+                            <li class="day">6</li>
+                            <li class="day">7</li>
+                            <li class="day">8</li>
+                            <li class="day">9</li>
+                            <li class="day">10</li>
+                            <li class="day">11</li>
+                            <li class="day">12</li>
+                            <li class="day">13</li>
+                            <li class="day">14</li>
+                            <li class="day">15</li>
+                            <li class="day">16</li>
+                            <li class="day">17</li>
+                            <li class="day">18</li>
+                            <li class="day">19</li>
+                            <li class="day">20</li>
+                            <li class="day">21</li>
+                            <li class="day">22</li>
+                            <li class="day">23</li>
+                            <li class="day">24</li>
+                            <li class="day">25</li>
+                            <li class="day">26</li>
+                            <li class="day">27</li>
+                            <li class="day">28</li>
+                            <li class="day">29</li>
+                            <li class="day">30</li>
+                            <li class="day">31</li>
+                        </ul>
+                        <img class="flecha" src="assets/flecha derecha.png" alt="flecha">
+                    </div>
+    
+                    <div class="container-btn-cerrar">
+                        <button id="btn-cerrar"> volver</button>
+                    </div>
+                </div>
+    
+            </dialog>
+            
+            <form action="">
+                <table class="table">
+                    <caption class="table__tittle"> <b>Grupo (nombre)</b> </caption>
+        
+                    <thead class="table__thead">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Documento</th>
+                            <th>Asistencia</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__tbody">
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>xxxxxxxx</td>
+                            <td>
+                                <input class="checkbox" type="checkbox" name="" id=""> 
                             </td>
-                    </tr>
-                </tfoot>
-            </table>
-            <button class="btn-guardar" type="submit">Guardar asistencia</button>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table__tfoot">
+                        <tr>
+                            <td colspan="4">
+                                    <p>Presentes: #</p>
+                                </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button class="btn-guardar" type="submit">Guardar asistencia</button>
+    
+            </form>        
 
-        </form>        
+        </main>    
+
+        <div class="historial">
+
+            <div class="contenedor">
+
+                <strong class="fecha">(fecha)</strong>
+
+                <div class="botones">
+
+                    <button class="btn-dia-actual">ir al  dia actual</button>
+    
+                    <button id="btn-ventana" class="btn-ventana">Historial de asistencia</button>
+                </div>
+
+
+            </div>
+    
+            <dialog id="ventana" > 
+                
+                <div>
+    
+                    <h2>(mes) de (año)</h2>
+    
+                    
+                    <div class="calendar">
+                        <img class="flecha" src="assets/flecha izquierda.png" alt="flecha">
+                        <ul class="list_days">
+                            <li class="day-week">lun</li>
+                            <li class="day-week">mar</li>
+                            <li class="day-week">mie</li>
+                            <li class="day-week">jue</li>
+                            <li class="day-week">vie</li>
+                            <li class="day-week">sab</li>
+                            <li class="day-week">dom</li>
+    
+                            <li class="day">1</li>
+                            <li class="day">2</li>
+                            <li class="day">3</li>
+                            <li class="day">4</li>
+                            <li class="day">5</li>
+                            <li class="day">6</li>
+                            <li class="day">7</li>
+                            <li class="day">8</li>
+                            <li class="day">9</li>
+                            <li class="day">10</li>
+                            <li class="day">11</li>
+                            <li class="day">12</li>
+                            <li class="day">13</li>
+                            <li class="day">14</li>
+                            <li class="day">15</li>
+                            <li class="day">16</li>
+                            <li class="day">17</li>
+                            <li class="day">18</li>
+                            <li class="day">19</li>
+                            <li class="day">20</li>
+                            <li class="day">21</li>
+                            <li class="day">22</li>
+                            <li class="day">23</li>
+                            <li class="day">24</li>
+                            <li class="day">25</li>
+                            <li class="day">26</li>
+                            <li class="day">27</li>
+                            <li class="day">28</li>
+                            <li class="day">29</li>
+                            <li class="day">30</li>
+                            <li class="day">31</li>
+                        </ul>
+                        <img class="flecha" src="assets/flecha derecha.png" alt="flecha">
+                    </div>
+    
+                    <div class="container-btn-cerrar">
+                        <button id="btn-cerrar"> volver</button>
+                    </div>
+                </div>
+    
+            </dialog>
+            
+            <form action="">
+                <table class="table">
+                    <caption class="table__tittle"> <b>Grupo (nombre)</b> </caption>
+        
+                    <thead class="table__thead">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Documento</th>
+                            <th>Asistencia</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__tbody">
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>xxxxxxxx</td>
+                            <td>
+                                <input class="checkbox" type="checkbox" name="" id=""> 
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table__tfoot">
+                        <tr>
+                            <td colspan="4">
+                                    <p>Presentes: #</p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+    
+            </form>        
+
+        </div>    
 
 
         <script src="instructor.js"></script>

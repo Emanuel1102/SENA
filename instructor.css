@@ -19,6 +19,10 @@ button{
     border-radius: 10px;
 }
 
+button::first-letter{
+    text-transform: uppercase;
+}
+
 button:hover{
     background-color: #001520;
 }
@@ -77,6 +81,12 @@ body{
     align-items: center;
     padding: 0;
     margin: 0;
+}
+
+.principal, .historial{
+    width: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .contenedor-btn-ventana{
@@ -255,4 +265,22 @@ body{
 
 .btn-guardar{
     margin-top: 1em;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1em;
+    
+
+    & .fecha{
+        font-size: 1.2em;
+    }
+
+    & .botones{
+        margin-right: 3em;
+    
+    }
 }
