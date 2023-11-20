@@ -85,7 +85,8 @@ body{
 
 .principal, .historial{
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
 }
 
@@ -161,6 +162,7 @@ body{
                 background-color: var(--verde-corporativo);
                 border-radius: 100%;
                 outline: 1px dashed var(--negro);
+                color: var(--blanco);
                 transition: .2s;
             }
 
@@ -277,10 +279,20 @@ body{
 
     & .fecha{
         font-size: 1.2em;
+        margin-left: 1.5em;
     }
 
     & .botones{
-        margin-right: 3em;
+        margin-right: 1.5em;
     
     }
+}
+
+
+/* mostrar y ocultar */
+
+.ocultar{
+    display: none;
+    opacity: 0;
+    transition: .5s;
 }
