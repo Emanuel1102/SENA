@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="administrativo.css">
+    <title>Nombre</title>
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img class="icon" src="/assets/image.webp" alt="foto de perfil">
+            <h2 class="nombre">Nombre </h2>
+        </div>
+
+    </header>
+
+    <main class="pisos">
+
+        <details class="piso-1">
+            <summary>Piso 1</summary>   
+        </details>
+
+        <details class="piso-2">
+            <summary>Piso 2</summary>
+        </details>
+
+        <details class="piso-3">
+            <summary>Piso 3</summary>
+        </details>
+
+        <details class="piso-4">
+            <summary>Piso 4</summary>
+
+            <table class="registro-ambientes">
+                <tr>
+                    <td>Desarrollo de software 1</td>
+                    <td> <span>ocupado</span> </td>
+                    <td>Fabian Fadul</td>
+                    <td>
+                        <button class="btn-ventana" onclick="window.ventana.showModal()">Historial</button>
+                        <dialog class="ventana" id="ventana">
+
+
+                            
+                            <div class="contenedor-btn-cerrar">
+                                <button onclick="window.ventana.close()">cerrar</button>
+                            </div>
+
+                            <table class="table">
+                                <caption class="table__tittle"> <b>Ambiente</b> </caption>
+                                <thead class="table__thead">
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Hora de ingreso</th>
+                                        <th>Instructor</th>
+                                        <th>Grupo</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table__tbody">
+                                    <tr>
+                                        <td>10/10/2023</td>
+                                        <td>6:30 AM</td>
+                                        <td>Fabian Fadul</td>
+                                        <td>ADSO-3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
+
+        </details>
+        
+    </main>
+
+</body>
+</html>
