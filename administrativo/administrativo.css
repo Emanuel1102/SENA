@@ -10,6 +10,23 @@
     --border-1px-solid-black: 1px solid black;
 }
 
+button{
+    cursor: pointer;
+    background-color: var(--azul-corporativo);
+    color: var(--blanco);
+    font-size: medium;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+button::first-letter{
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #001520;
+}
+
 
 header{
     background-color: var(--verde-corporativo);
@@ -51,6 +68,32 @@ body{
     margin: 0;
 }
 
+
+.ventana {
+    background-color: transparent;
+    border: none;
+
+    & div:not(.contenedor-btn-cerrar){
+
+        width: 75vw;
+        height: auto;
+        padding: 2em;
+        background-color: var(--gris);
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        --radius: 20px;
+        border-radius: var(--radius);
+        border: .2em solid var(--azul-corporativo);
+    }
+
+    .contenedor-btn-cerrar{
+        width: 100%;
+        text-align: left;
+
+    }
+}
+
 .table{
     width: 85%;
     border-collapse: collapse;
@@ -90,20 +133,48 @@ body{
     }
 }
 
-.ventana{
-    width: 80vw;
-    padding: 2em;
-    background-color: var(--gris);
-    display: grid;
-    gap: 1em;
-    place-items: center;
-    --radius: 20px;
-    border-radius: var(--radius);
-    border: .2em solid var(--azul-corporativo);
+.pisos{
+    width: 95%;
+    height: auto;
+    padding: 1em;
+    
+    /* & .piso:first-child{
+        border-radius: 20px 20px 0 0;
+    } */
 
-    .contenedor-btn-cerrar{
-        width: 100%;
+    .piso{
+        background-color: var(--gris);
+        font-size: larger;
+        border: var(--border-1px-solid-black);
+        padding: .5em;
+
+        .registro-ambientes{
+            margin-top: .5em;
+            width: 100%;
+            background-color: var(--blanco);
+            border-collapse: collapse;
+
+            & td{
+                text-align: center;
+                padding: .5em;
+                border-top: var(--border-1px-solid-black);
+                border-bottom: var(--border-1px-solid-black);
+
+                .estado{
+                    background-color: var(--marron-corporativo);
+                    color: var(--blanco);
+                    padding: .2em .5em ;
+                    border-radius: 1em;
+                }
+            }
+        }
+    }
+
+    .piso:first-child{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .piso:last-child{
+        border-radius: 0 0 20px 20px;
     }
 }
-
-
