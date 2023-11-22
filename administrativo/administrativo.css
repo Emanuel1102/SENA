@@ -1,5 +1,6 @@
 :root{
     font-family: Calibri;
+    --border-1px-solid-black: 1px solid black;
     /* colores */
     --negro:#000000;
     --blanco: #FFFFFF;
@@ -7,7 +8,6 @@
     --azul-corporativo: #00324D;
     --marron-corporativo: #CB7766;
     --gris: #E3E3E3;
-    --border-1px-solid-black: 1px solid black;
 }
 
 button{
@@ -90,7 +90,22 @@ body{
     .contenedor-btn-cerrar{
         width: 100%;
         text-align: left;
+        
+        .btn-cerrar{
+            border-radius: 100%;
+            width: fit-content;
+            height: fit-content;
+            border: none;
+            display: flex;
+            
+            .icono{
+                --dimension: 2em;
+                width: var(--dimension);
+                height: var(--dimension);
+            }
 
+            
+        }
     }
 }
 
@@ -138,17 +153,16 @@ body{
     height: auto;
     padding: 1em;
     
-    /* & .piso:first-child{
-        border-radius: 20px 20px 0 0;
-    } */
-
     .piso{
+        cursor: pointer;
         background-color: var(--gris);
         font-size: larger;
+        font-weight: bold;
         border: var(--border-1px-solid-black);
         padding: .5em;
 
         .registro-ambientes{
+            cursor: default;
             margin-top: .5em;
             width: 100%;
             background-color: var(--blanco);
@@ -177,4 +191,12 @@ body{
     .piso:last-child{
         border-radius: 0 0 20px 20px;
     }
+}
+
+
+.piso[open] {
+    transition: 1s;
+    height: fit-content;
+    transition: .5s;
+
 }
