@@ -30,23 +30,51 @@ button:hover{
 
 header{
     background-color: var(--verde-corporativo);
-    display: flex;
-    height:  7em;
+    display: grid;
+    height:  fit-content;
     padding: 10px;
-    justify-content: space-between;
-    align-items: center;
+    padding-bottom: 0%;
     flex-shrink: 0;
     align-self: stretch;
 
+    .opciones{
+        display: flex;
+        justify-content: space-between;
+        /* border: var(--border-1px-solid-black); */
+
+        .opcion{
+            width: 50%;
+            text-align: center;
+            color: var(--blanco);
+            font-size: large;
+            cursor: pointer;
+            margin-bottom: 0%   ;
+            display: grid;
+            place-items: center;
+            
+        }
+
+        .opcion::after{
+            content: "";
+            background-color: var(--blanco);
+            display: block;
+            width: 90%;
+            height: .3em;
+            transition: 1s;
+        }
+        
+    }
+    
+
     .user{
         width: fit-content;
-        height: 70%;
+        height: fit-content;
         display: flex;
         justify-content: space-between;
         align-items: center;
         
         .icon{
-            height: 100%;
+            height: 5em;
             flex-shrink: 0;
             margin-right: .5em;
         }
@@ -159,12 +187,16 @@ body{
         font-size: larger;
         font-weight: bold;
         border: var(--border-1px-solid-black);
-        padding: .5em;
+
+        .nombre-piso{
+            padding: .5em;
+        }
 
         .registro-ambientes{
             cursor: default;
-            margin-top: .5em;
-            width: 100%;
+            margin: auto;
+            margin-bottom: .5em;
+            width: 95%;
             background-color: var(--blanco);
             border-collapse: collapse;
 
@@ -194,9 +226,3 @@ body{
 }
 
 
-.piso[open] {
-    transition: 1s;
-    height: fit-content;
-    transition: .5s;
-
-}

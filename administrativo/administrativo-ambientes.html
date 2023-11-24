@@ -8,9 +8,16 @@
 </head>
 <body>
     <header>
-        <div class="user">
-            <img class="icon" src="/assets/image.webp" alt="foto de perfil">
-            <h2 class="nombre">Nombre </h2>
+        <div class="contenedor">
+            <div class="user">
+                <img class="icon" src="/assets/image.webp" alt="foto de perfil">
+                <h2 class="nombre">Nombre </h2>
+            </div>
+    
+            <div class="opciones">
+                <p class="opcion" id="usuarios">Usuarios</p>
+                <p class="opcion" id="ambientes">Ambientes</p>
+            </div>
         </div>
 
     </header>
@@ -18,7 +25,7 @@
     <main class="pisos">
  
         <details class="piso" >
-            <summary>Piso 1</summary>  
+            <summary class="nombre-piso">Piso 1</summary>  
             <table class="registro-ambientes">
                 <tr>
                     <td>Ambiente</td>
@@ -65,7 +72,7 @@
         </details>
 
         <details class="piso">
-            <summary>Piso 2</summary>
+            <summary class="nombre-piso">Piso 2</summary>
 
             <table class="registro-ambientes">
                 <tr>
@@ -113,7 +120,7 @@
         </details>
 
         <details class="piso">
-            <summary>Piso 3</summary> 
+            <summary class="nombre-piso">Piso 3</summary> 
 
             <table class="registro-ambientes">
                 <tr>
@@ -161,7 +168,7 @@
         </details>
 
         <details class="piso">
-            <summary>Piso 4</summary>
+            <summary class="nombre-piso">Piso 4</summary>
 
             <table class="registro-ambientes">
                 <tr>
@@ -170,7 +177,7 @@
                     <td>Fabian Fadul</td>
                     <td>
                         <button class="btn-ventana">Historial</button>
-                        <dialog class="ventana" id="ventana">
+                        <dialog class="ventana">
 
 
                             <div>
@@ -210,6 +217,10 @@
         
         
     </main>
+
+    <div class="usuarios">
+        
+    </div>
 
     <script src="administrativo.js"></script>
 
