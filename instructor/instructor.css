@@ -233,6 +233,12 @@ body{
 
 .table__tbody{
 
+    & tr:hover{
+        background-color: rgba(141, 141, 141, 0.11);
+        transition: .2s;
+    }
+
+
     & td{
     border: 1px solid black;
     text-align: center;

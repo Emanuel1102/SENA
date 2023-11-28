@@ -1,0 +1,105 @@
+:root{
+    font-family: Calibri;
+    --border-1px-solid-black: 1px solid black;
+    /* colores */
+    --negro:#000000;
+    --blanco: #FFFFFF;
+    --verde-corporativo: #39A900;
+    --azul-corporativo: #00324D;
+    --marron-corporativo: #CB7766;
+    --gris: #E3E3E3;
+}
+
+body{
+    margin: 0%;
+}
+
+.asistencia-roles{
+    width: 100%;
+    border: var(--border-1px-solid-black);
+    border-collapse: collapse;
+
+    & .titulo{
+        text-align: left;
+        padding: 1em;
+        background-color: var(--verde-corporativo);
+
+        .contenedor{
+            width: fit-content;
+            display: flex;
+            place-items: center;
+            gap: 1em;
+
+            & .strong{
+                font-size: larger;
+                color: var(--blanco);
+            }
+
+            .btn-atras:hover{
+                background-color: #001520;
+            }
+
+
+            & .btn-atras{
+                border-radius: 100%;
+                width: fit-content;
+                height: fit-content;
+                border: none;
+                display: flex;
+                background-color: var(--azul-corporativo);
+                padding: .8em;
+                cursor: pointer;
+                
+                .icono{
+                    --dimension: 3em;
+                    width: var(--dimension);
+                    height: var(--dimension);
+                }
+    
+                
+            }
+    
+        }
+
+    }
+
+    .thead{
+        background-color: var(--gris);
+        & th{
+            padding: .5em;
+            border: 1px solid black;
+            font-size: larger;
+        }
+
+    }
+
+    .tbody{
+
+        & tr:hover{
+            background-color: rgba(141, 141, 141, 0.11);
+            transition: .2s;
+        }
+        
+        & td{
+            border: 1px solid black;
+            text-align: center;
+            padding: .5em;
+            font-size: large;
+            
+            & .checkbox{
+                --dimension: 20px;
+                height: var(--dimension);
+                width:  var(--dimension);
+                cursor: pointer;
+            }
+        
+            & .checkbox:checked{
+                accent-color: var(--azul-corporativo);
+            }
+        }
+
+    
+            
+    
+    }
+}

@@ -169,6 +169,12 @@ body{
     }
 
     .table__tbody{
+
+        & tr:hover{
+            background-color: rgba(141, 141, 141, 0.11);
+            transition: .2s;
+        }
+
     
         background-color: var(--blanco);
         
@@ -189,7 +195,6 @@ body{
     & .piso:hover{
         background-color: rgba(128, 128, 128, 0.432);
         transition: .2s;
-        color: var(--azul-corporativo);
 
     }
     
@@ -289,6 +294,7 @@ body{
     .rol:hover{
         background-color: rgba(128, 128, 128, 0.432);
         transition: .2s;
+        border: 2px solid var(--azul-corporativo);
         
         .nombre-rol{
             color: var(--blanco);
