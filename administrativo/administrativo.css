@@ -40,27 +40,31 @@ header{
     .opciones{
         display: flex;
         justify-content: space-between;
-        /* border: var(--border-1px-solid-black); */
 
         .opcion{
             width: 50%;
+            height: 2em;
             text-align: center;
             color: var(--blanco);
             font-size: large;
+            font-weight: bold;
             cursor: pointer;
             margin-bottom: 0%   ;
             display: grid;
             place-items: center;
+            position: relative;
+
             
         }
 
-        .opcion::after{
+        .seleccion::after{
             content: "";
             background-color: var(--blanco);
             display: block;
             width: 90%;
             height: .3em;
-            transition: 1s;
+            position: absolute;
+            bottom: 0%;
         }
         
     }
@@ -177,9 +181,17 @@ body{
 }
 
 .pisos{
+    /* display: none; */
     width: 95%;
     height: auto;
     padding: 1em;
+
+    & .piso:hover{
+        background-color: rgba(128, 128, 128, 0.432);
+        transition: .2s;
+        color: var(--azul-corporativo);
+
+    }
     
     .piso{
         cursor: pointer;
@@ -206,6 +218,10 @@ body{
                 border-top: var(--border-1px-solid-black);
                 border-bottom: var(--border-1px-solid-black);
 
+                .btn-ventana{
+                    border-radius: 1em;
+                }
+
                 .estado{
                     background-color: var(--marron-corporativo);
                     color: var(--blanco);
@@ -226,3 +242,58 @@ body{
 }
 
 
+
+
+.usuarios{
+    /* border: var(--border-1px-solid-black); */
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 4em;
+    margin-top: 2em;
+
+    .instructores-y-administrativos{
+        display: flex;
+        gap: 4em;
+    }
+
+    .rol{
+        background-color: var(--gris);
+        --dimension: 12em;
+        width:  var(--dimension);
+        height: var(--dimension);
+        position: relative;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        /* place-items: center; */
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--verde-corporativo);
+        overflow: hidden;
+        
+        .nombre-rol{
+            color: var(--azul-corporativo);
+            text-align: center;
+            font-size: large;
+        }
+
+        & a{
+            position: absolute;
+            inset: 0;
+        }    
+    }
+
+    .rol:hover{
+        background-color: rgba(128, 128, 128, 0.432);
+        transition: .2s;
+        
+        .nombre-rol{
+            color: var(--blanco);
+            transition: .2s;
+
+        }
+    }
+}
